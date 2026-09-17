@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michikusaya</title>
+<meta name="description" content="個人でスマートフォン向けのゲームを作っています。">
+<style>
+  :root{
+    --bg:#F6F8F4; --card:#FFFFFF; --ink:#1B241C; --muted:#5E6D60;
+    --line:#E0E7DC; --accent:#2F8C4E;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#111610; --card:#1A211A; --ink:#E8EEE5; --muted:#9AA79B;
+      --line:#2B352C; --accent:#62C580;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif;
+    font-size:16px; line-height:1.8; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:42rem; margin:0 auto; padding:56px 16px 80px;}
+  header{margin-bottom:40px;}
+  h1{font-size:1.75rem; font-weight:800; margin:0 0 8px; letter-spacing:.01em;}
+  .tag{font-size:.8125rem; font-weight:700; letter-spacing:.12em; color:var(--accent); margin-bottom:10px;}
+  .lede{color:var(--muted); margin:0;}
+  h2{font-size:1rem; font-weight:800; margin:40px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--line);}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px; margin-bottom:12px;
+  }
+  .card h3{margin:0 0 4px; font-size:1.0625rem; font-weight:800;}
+  .card p{margin:0; color:var(--muted); font-size:.9375rem;}
+  .badge{
+    display:inline-block; font-size:.6875rem; font-weight:700; letter-spacing:.06em;
+    border-radius:999px; padding:2px 10px; margin-left:8px; vertical-align:2px;
+    background:rgba(47,140,78,.13); color:var(--accent);
+  }
+  a{color:var(--accent);}
+  .contact{font-size:.9375rem;}
+  .contact dt{font-weight:700; margin-top:12px;}
+  .contact dd{margin:2px 0 0; color:var(--muted);}
+  footer{
+    margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+    font-size:.8125rem; color:var(--muted);
+    display:flex; flex-wrap:wrap; gap:6px 18px; justify-content:space-between;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="tag">INDIE GAME DEVELOPER</div>
+    <h1>Michikusaya</h1>
+    <p class="lede">個人でスマートフォン向けのゲームを作っています。<br>
+    短い時間で遊べて、繰り返し遊びたくなるものを目指しています。</p>
+  </header>
+
+  <h2>アプリ</h2>
+
+  <div class="card">
+    <h3>新作（タイトル未定）<span class="badge">準備中</span></h3>
+    <p>3つのレーンを進むエンドレスランナー。体の長さが、体力と弾数と避けにくさを同時に兼ねています。
+    長いほど強く、長いほど避けられない。どこまで行けるかを試すゲームです。</p>
+  </div>
+
+  <h2>お問い合わせ</h2>
+
+  <dl class="contact">
+    <dt>メール</dt>
+    <dd>michikusa.studio@gmail.com</dd>
+  </dl>
+
+  <footer>
+    <span>&copy; Michikusaya</span>
+    <span><a href="privacy.html">プライバシーポリシー</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
